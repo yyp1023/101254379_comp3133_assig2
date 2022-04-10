@@ -1,0 +1,18 @@
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)" class="loginForm">
+    <mat-form-field>
+        <mat-label for="username" name="username">Username:</mat-label>
+        <input matInput ngModel type="text" id="username" name="username" required />
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label for="password" name="password">Password:</mat-label>
+        <input matInput ngModel type="password" id="password" name="password" required />
+    </mat-form-field>
+    <div>{{ errorMsg }}</div>
+    <p>
+        <button mat-raised-button color="primary" type="submit">Log In</button>
+    </p>
+    <p>
+        <button mat-raised-button color="accent" type="button" (click)="navigateTo('signup')">Go to Sign Up</button>
+    </p>
+</form>

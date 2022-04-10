@@ -1,0 +1,36 @@
+<form #signupForm="ngForm" (ngSubmit)="onSubmit(signupForm.value)" class="signupForm">
+    <mat-form-field>
+        <mat-label for="username" name="username">Username:</mat-label>
+        <input matInput ngModel type="text" id="username" name="username" required />
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label for="firstname" name="firstname">First Name:</mat-label>
+        <input matInput ngModel type="text" id="firstname" name="firstname" required />
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label for="lastname" name="lastname">Last Name:</mat-label>
+        <input matInput ngModel type="text" id="lastname" name="lastname" required />
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label for="password" name="password">Password:</mat-label>
+        <input matInput ngModel type="password" id="password" name="password" required />
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label for="email" name="email">Email:</mat-label>
+        <input matInput ngModel type="text" id="email" name="email" required />
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label for="type" name="type">Type:</mat-label>
+        <input matInput ngModel type="text" id="type" name="type" required />
+    </mat-form-field>
+    <br>
+    <div>{{ signUpComplete }}</div>
+    <p>
+        <button mat-raised-button color="primary" type="submit">Sign Up</button>
+    </p>
+</form>

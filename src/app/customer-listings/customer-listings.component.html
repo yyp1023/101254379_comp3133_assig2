@@ -1,0 +1,23 @@
+<h1>Listings</h1>
+
+<div *ngFor="let customerListing of customerListings" class="border">
+    <div class="bold">Listing ID:</div>
+    <div>{{ customerListing.listing_id }}</div>
+    <br>
+    <div class="bold">Booking ID:</div>
+    <div>{{ customerListing.booking_id }}</div>
+    <br>
+    <div class="bold">Booking Date:</div>
+    <div>{{ customerListing.booking_date }}</div>
+    <br>
+    <div class="bold">Bookign Start:</div>
+    <div>{{ customerListing.booking_start }}</div>
+    <br>
+    <div class="bold">Booking End:</div>
+    <div>{{ customerListing.booking_end }}</div>
+    <br>
+    <div class="bold">Username:</div>
+    <div>{{ customerListing.username }}</div>
+</div>
+
+<button mat-raised-button color="primary" class="margin-top" (click)="navigateTo('add-listing')">Add New Listing</button>

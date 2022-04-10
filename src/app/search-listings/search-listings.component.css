@@ -1,0 +1,23 @@
+.searchForm {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.border {
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.margin-top {
+    margin-top: 30px;
+}

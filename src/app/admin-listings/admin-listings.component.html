@@ -1,0 +1,32 @@
+<h1>Listings</h1>
+
+<div *ngFor="let adminListing of adminListings" class="border">
+    <div class="bold">Listing ID:</div>
+    <div>{{ adminListing.listing_id }}</div>
+    <br>
+    <div class="bold">Listing Title:</div>
+    <div>{{ adminListing.listing_title }}</div>
+    <br>
+    <div class="bold">Description</div>
+    <div>{{ adminListing.description }}</div>
+    <br>
+    <div class="bold">Street:</div>
+    <div>{{ adminListing.street }}</div>
+    <br>
+    <div class="bold">City</div>
+    <div>{{ adminListing.city }}</div>
+    <br>
+    <div class="bold">Postal Code:</div>
+    <div>{{ adminListing.postal_code }}</div>
+    <br>
+    <div class="bold">Price:</div>
+    <div>{{ adminListing.price }}</div>
+    <br>
+    <div class="bold">Email:</div>
+    <div>{{ adminListing.email }}</div>
+    <br>
+    <div class="bold">Username:</div>
+    <div>{{ adminListing.username }}</div>
+</div>
+
+<button mat-raised-button color="primary" class="margin-top" (click)="navigateTo('search-listings')">Go to Search</button>
